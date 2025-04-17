@@ -53,7 +53,7 @@ proyecto_creditos/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone git@github.com:nanecorner/proyecto_creditos.git
+git clone https://github.com/nanecorner/proyecto_creditos.git
 cd proyecto_creditos
 ```
 
