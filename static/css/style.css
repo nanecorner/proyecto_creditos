@@ -1,0 +1,153 @@
+/* =======================
+   Variables y estilo base
+========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* =======================
+   Encabezado y layout
+========================== */
+.upper-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* =======================
+   Formulario
+========================== */
+.formulario-creditos {
+    max-width: 600px;
+}
+
+form input,
+form button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.grid-form .span-2 {
+    grid-column: span 2;
+}
+
+/* =======================
+   Botones
+========================== */
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: darkslategray;
+}
+
+.btn-cancelar {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-cancelar:hover {
+    background-color: #aaa;
+}
+
+/* Botones de acción en tabla */
+.btn-tabla {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-editar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: #388E3C;
+}
+
+.btn-eliminar {
+    background-color: #F44336;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #C62828;
+}
+
+/* =======================
+   Tabla
+========================== */
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #00695c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    text-align: center;
+}
+
+/* =======================
+   Gráfica
+========================== */
+#creditoChart {
+    margin-left: 300px;
+}

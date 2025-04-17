@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Crédito</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Editar Crédito</h1>
+
+    <!-- Formulario para editar el crédito -->
+    <form action="/editar/{{ credito.id }}" method="POST" class="formulario-creditos">
+        <div class="grid-form">
+            <input type="text" name="cliente" value="{{ credito.cliente }}" required class="span-2">
+    
+            <input type="number" step="0.01" name="monto" value="{{ credito.monto }}" required>
+            <input type="number" step="0.01" name="tasa_interes" value="{{ credito.tasa_interes }}" required>
+    
+            <input type="number" name="plazo" value="{{ credito.plazo }}" required>
+            <input type="date" name="fecha_otorgamiento" value="{{ credito.fecha_otorgamiento }}" required>
+        </div>
+    
+        <button type="submit">Guardar Cambios</button>
+        <a href="{{ url_for('index') }}" class="btn-cancelar">Cancelar</a>
+    </form>
+    
+</body>
+</html>
