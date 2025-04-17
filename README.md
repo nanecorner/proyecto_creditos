@@ -6,6 +6,17 @@ Aplicación web desarrollada con **Python (Flask)** y **SQLite**, que permite re
 
 ---
 
+
+## Funcionalidades
+
+- Registrar nuevo crédito (cliente, monto, tasa, plazo, fecha).
+- Listar todos los créditos registrados en una tabla.
+- Editar crédito existente.
+- Eliminar crédito.
+- Visualizar una gráfica de dona con los créditos por cliente.
+
+---
+
 ## Estructura del Proyecto
 
 ```
@@ -65,23 +76,11 @@ pip install -r requirements.txt
 
 ```bash
 python app.py
-```
-ó
-```bash
+#o
 python3 app.py
 ```
 
 La aplicación estará disponible en: [http://localhost:8800](http://localhost:8800)
-
----
-
-## Funcionalidades
-
-- Registrar nuevo crédito (cliente, monto, tasa, plazo, fecha).
-- Listar todos los créditos registrados en una tabla.
-- Editar crédito existente.
-- Eliminar crédito.
-- Visualizar una gráfica de dona con los créditos por cliente.
 
 ---
 
